@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TodoInterface } from '../../types/todo.interface';
+import { TodoInterface } from '../../todos/types/todo.interface';
 
 @Component({
   selector: 'app-todos',
@@ -17,12 +17,21 @@ export class TodosComponent {
       text: 'Second todo',
       isCompleted: true,
     },
-
     {
       id: '3',
       text: 'Third todo',
       isCompleted: false,
     },
+    {
+      id: '3',
+      text: 'Third todo',
+      isCompleted: false,
+    },
+    {
+      id: '3',
+      text: 'Third todo',
+      isCompleted: false,
+    }
   ];
 
   changeText(): void {

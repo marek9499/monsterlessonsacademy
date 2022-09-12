@@ -1,12 +1,12 @@
 import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
-import { TodoInterface } from '../../types/todo.interface';
-import { TodosService } from '../../services/todos.service';
+import { TodoInterface } from '../../todos/types/todo.interface';
+import { TodosService } from '../../todos/services/todos.service';
 import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-todos-todo',
   templateUrl: './todo.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  //changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TodoComponent {
   @Input('todo') todoProps: TodoInterface;
@@ -18,7 +18,7 @@ export class TodoComponent {
   }
 
   checkRender(): boolean {
-    console.log('checkRender');
+    console.log('checkRender child');
     return true;
   }
 
